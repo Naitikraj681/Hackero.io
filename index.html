@@ -3,52 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naitik's Music World</title>
+    <title>Beats of Naitik</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="welcome">
-        <h1>Welcome to the beats of Naitik</h1>
+    <h1>Welcome to the beats of Naitik</h1>
+    
+    <div class="options">
+        <button onclick="showSongs(1)">💔💔</button>
+        <button onclick="showSongs(2)">NsLWM🌹🌹</button>
+        <button onclick="showSongs(3)">Sad Loop of Love</button>
+        <button onclick="showSongs(4)">Heart Stops Beating 💔</button>
     </div>
 
-    <!-- Photo Upload Section (Only Once) -->
-    <div id="photoUploadSection">
-        <h2>Upload Your Photo</h2>
-        <input type="file" id="photoUpload" accept="image/*">
-        <button onclick="uploadPhoto()">Upload</button>
-    </div>
-
-    <!-- Show Uploaded Photo -->
-    <div id="uploadedPhoto" style="display: none;">
-        <h3>Your Photo:</h3>
-        <img id="userPhoto" src="" alt="User Photo">
-    </div>
-
-    <!-- Song Options -->
-    <div id="songOptions" style="display:none;">
-        <h3>Select Your Vibe 🎵</h3>
-        <button onclick="showSongs(1)">1_ 💔💔</button>
-        <button onclick="showSongs(2)">2_ NsLWM🌹🌹</button>
-        <button onclick="showSongs(3)">3_ Sad Loop of Love</button>
-        <button onclick="showSongs(4)">4_ Heartstops Beating 💔</button>
-    </div>
-
-    <!-- Songs List -->
-    <div id="songList" style="display:none;">
-        <h3>Choose a Song 🎶</h3>
-        <button onclick="playSong(1)">Song 1</button>
-        <button onclick="playSong(2)">Song 2</button>
-        <button onclick="playSong(3)">Song 3</button>
-        <button onclick="playSong(4)">Song 4</button>
-    </div>
-
-    <!-- Now Playing -->
-    <h2 id="nowPlaying" style="display:none;">🎶 Aur Naitik's Soul 🎶</h2>
-
-    <!-- Music Player -->
-    <div id="musicPlayer">
-        <audio id="audioPlayer" controls></audio>
-    </div>
+    <div id="song-list"></div>
 
     <script src="script.js"></script>
 </body>
